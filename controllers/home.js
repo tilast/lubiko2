@@ -8,3 +8,9 @@ exports.index = function(req, res) {
     title: 'Home'
   });
 };
+
+exports.spa = function(req, res) {
+  res.render('diamond/index', {
+    title: 'Home'
+  });
+};

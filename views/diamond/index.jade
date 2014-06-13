@@ -1,0 +1,555 @@
+html(lang='en')
+  head
+      meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+      meta(charset='utf-8')
+      meta(name='viewport', content='width=device-width, initial-scale=1.0')
+      meta(name='description', content='')
+      meta(name='author', content='')
+      link(rel='shortcut icon', href='http://alvarez.is/assets/ico/favicon.png')
+      title Lubiko | Плати меньше, а играй больше
+      //
+         Bootstrap core CSS 
+      link(href='/addons/bootstrap.css', rel='stylesheet')
+      //
+         Custom styles for this template 
+      link(href='/addons/main.min.css', rel='stylesheet')
+      link(href='/addons/linecons.css', rel='stylesheet')
+      link(rel='stylesheet', href='/addons/icomoon.css')
+      link(href='/addons/css.css', rel='stylesheet', type='text/css')
+      link(href='/addons/css(1).css', rel='stylesheet', type='text/css')
+      != js('application')
+      //
+         HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries 
+      //if lt IE 9
+        script(src='../../assets/js/html5shiv.js')
+        script(src='../../assets/js/respond.min.js')
+  body(data-spy='scroll', data-offset='0', data-target='#navbar-main', style='')
+    //
+       Fixed navbar 
+    #navbar-main
+      .navbar.navbar-default.navbar-fixed-top
+        .container
+          .navbar-header
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand
+              licon.li_diamond
+          .navbar-collapse.collapse
+            ul.nav.navbar-nav
+              li.active
+                a.smoothScroll(href='#home') Главная
+              li
+                a.smoothScroll(href='#showcase') Как это работает?
+              li
+                a.smoothScroll(href='#faq') FAQ
+              li
+                a.smoothScroll(href='#pricing') Цены
+              li
+                a.smoothScroll(href='#register') Закажи прямо сейчас!
+          //
+            /.nav-collapse 
+    //
+       ========== HEADERWRAP ========== 
+    section#home.scrollspy(name='home')
+    #headerwrap
+      .container
+        .col-lg-8
+          .home-container
+            h1 Арендуй LEGO®
+              br 
+              | Плати меньше, а играй больше!
+          //- p.hidden-xs
+            | A brand new Bootstrap 3 landing page. Created using the best framework. This theme comes with a clean and modern design. Includes awesome animations & effects. The best option for your mobile app page.
+        //
+           col-lg-4 
+        .col-lg-4
+          .phonefront
+            //- img.img-responsive(src='/img/img1.jpg')
+        //
+           col-lg-4 
+      //
+         container 
+    //
+       headerwrap 
+    //
+       ========== WELCOME TEXT ========== 
+    .container
+      //- .row
+      //-   br
+      //-   .col-lg-8
+      //-     h2.hideThis  
+      //-       | CREATE THE BEST PRESENTATION PAGE FOR YOUR APP. A NEW EXPERIENCE FOR YOUR USERS.
+      //-   .col-lg-4
+      //
+         row 
+    //
+       /container 
+    //
+       ========== FEATURES SECTION ========== 
+    .container.features
+      .row
+        .col-lg-4
+          licon.li_diamond
+          h4 БЕСПЛАТНАЯ ДОСТАВКА В ОБЕ СТОРОНЫ.
+        //
+           col-lg-3 
+        .col-lg-4
+          licon.li_lab
+          h4 ЧИСТЫЕ И ДЕЗИНФИЦИРОВАННЫЕ НАБОРЫ.
+        //
+           col-lg-3 
+        .col-lg-4
+          licon.li_heart
+          h4 БЕЗ ЗАЛОГА!
+        //
+           col-lg-3 
+      //
+         features 
+    //
+       container 
+    //
+       ========== SECTION DIVIDER 01 ========== 
+    #section01
+      .container
+        h1 Your app deserves the best landing page.
+      //
+         container 
+    //
+       section01 
+    //
+       ========== APP SHOWCASE ========== 
+    section#showcase.scrollspy(name='showcase')
+    .container
+      .row
+        br
+        br
+        .col-lg-6.col-lg-offset-3
+          h2.centered QUALITY MEETS LANDING PAGE.
+          hr
+          br
+          p
+            | Any web page that you purposely send traffic to is a ‘landing page’. It’s the page where people end up after they click on a PPC ad, a tweet, an email, or after they scan a QR code – just to name a few.
+          p
+            | While you could simply direct this campaign traffic to your homepage or a product page within your website, this doesn’t usually yield the best results.
+          p
+            | The page where someone lands after the click has enormous potential to influence whether or not that visitor eventually converts into a lead or sale. Too often, marketers focus most of their attention and budget on attracting and driving good traffic, but that’s really only half of the equation.
+        //
+           col-lg-6 
+      //
+         row 
+      br
+      br
+      #ac-wrapper.ac-wrapper
+        .ac-device
+          a(href='http://alvarez.is/demo/diamond/#')
+            img(src='/addons/screen4.jpg')
+          h3.ac-title Pssst! Try to click the image.
+        .ac-grid
+          a(href='#')
+            img(src='/addons/screen2.jpg')
+            span Awesome showcase script.
+          a(href='#')
+            img(src='/addons/screen1.jpg')
+            span Ideal for any app.
+          a(href='#')
+            img(src='/addons/screen3.jpg')
+            span Truly fashion design.
+          a(href='#')
+            img(src='/addons/screen4.jpg')
+            span It's cool, you know it.
+      //
+         ac-wrapper 
+      br
+      br
+      br
+    //
+       container 
+    //
+       ========== SECTION DIVIDER 02 ========== 
+    #section02
+      .container
+        h1 Our team works hard for you.
+      //
+         container 
+    //
+       section02 
+    //
+       ========== FAQ SECTION ========== 
+    section#faq.scrollspy(name='faq')
+    #faqsection
+      .container
+        .row
+          br
+          br
+          .col-lg-6.col-lg-offset-3
+            h2.centered FREQUENTLY ASKED QUESTIONS.
+            hr
+            br
+            br
+          //
+             col-lg-6 
+          .col-lg-6(style='text-align: left;')
+            img.img-responsive(src='/addons/animation.gif')
+          //
+             col-lg-6 
+          //
+             ACCORDION 
+          .col-lg-6.faq
+            #accordion2.accordion
+              .accordion-group
+                .accordion-heading
+                  a.accordion-toggle(data-toggle='collapse', data-parent='#accordion2', href='http://alvarez.is/demo/diamond/#collapseOne')
+                    licon.li_diamond
+                    | Я получаю чистый ЛЕГО?
+                //
+                   /accordion-heading 
+                #collapseOne.accordion-body.collapse.in
+                  .accordion-inner
+                    p
+                      | Да! Каждый набор был помыт и обработан экологичными моющими средствами. Мы очищаем все детальки теми же средствами, которые одобрены для ресторанов. Проверенный процесс чистки гарантирует, что 99.99% микробов и бактерий были уничтожены и к вам приедет чистый ЛЕГО.
+                  //
+                     /accordion-inner 
+                //
+                   /collapse 
+              //
+                 /accordion-group 
+              br
+              .accordion-group
+                .accordion-heading
+                  a.accordion-toggle(data-toggle='collapse', data-parent='#accordion2', href='http://alvarez.is/demo/diamond/#collapseTwo')
+                    licon.li_diamond
+                    | Что я получу в коробке?
+                #collapseTwo.accordion-body.collapse
+                  .accordion-inner
+                    p
+                      | Мы вышлем вам красиво оформленный пакет. Вы также получите несколько интересных подарков в каждой коробке.
+                  //
+                     /accordion-inner 
+                //
+                   /collapse 
+              //
+                 /accordion-group 
+              br
+              .accordion-group
+                .accordion-heading
+                  a.accordion-toggle(data-toggle='collapse', data-parent='#accordion2', href='http://alvarez.is/demo/diamond/#collapseThree')
+                    licon.li_diamond
+                    | Нужно ли платить за доставку? 
+                #collapseThree.accordion-body.collapse
+                  .accordion-inner
+                    p
+                      | Нет, мы отправляем наборы LEGO в обоих направлениях бесплатно. Когда вы получите свой набор LEGO, укажите когда для вас удобно его забрать и играйте.
+                  //
+                     /accordion-inner 
+                //
+                   /collapse 
+              //
+                 /accordion-group 
+              br
+              .accordion-group
+                .accordion-heading
+                  a.accordion-toggle(data-toggle='collapse', data-parent='#accordion2', href='http://alvarez.is/demo/diamond/#collapseFour')
+                    licon.li_diamond
+                    | Что произойдет, если я потеряю детальку? 
+                #collapseFour.accordion-body.collapse
+                  .accordion-inner
+                    p
+                      | Не беспокойтесь! Мы понимаем, что детальки могут потеряться во время игры. Наш сервис включает гарантию, так что вы не будете платить ничего лишнего, если происходит потеря (до 5 штук). Мы просим сообщить нам, что деталек не хватает в привезенном наборе или вы потеряли что-то.
+                  //
+                     /accordion-inner 
+                //
+                   /collapse 
+              //
+                 /accordion-group 
+              br
+              .accordion-group
+                .accordion-heading
+                  a.accordion-toggle(data-toggle='collapse', data-parent='#accordion2', href='http://alvarez.is/demo/diamond/#collapseFive')
+                    licon.li_diamond
+                    | Что будет, если мне не хватит деталек?
+                #collapseFive.accordion-body.collapse
+                  .accordion-inner
+                    p
+                      | Мы проверяем каждый набор, чтобы убедиться, что каждый из них покидает наш процессинговый центр со всеми детальками. Но иногда неполный комплект может пройти через наш строгий процесс незамеченным. Если вы не можете найти детальку, мы просим всех пользователей сообщить об этом через ваш аккаунт, чтобы мы могли отправить запасные части сразу.
+                  //
+                     /accordion-inner 
+                //
+                   /collapse 
+              //
+                 /accordion-group 
+              br
+              .accordion-group
+                .accordion-heading
+                  a.accordion-toggle(data-toggle='collapse', data-parent='#accordion2', href='http://alvarez.is/demo/diamond/#collapseSix')
+                    licon.li_diamond
+                    | Сколько стоит услуга? 
+                #collapseSix.accordion-body.collapse
+                  .accordion-inner
+                    p
+                      | У нас есть три плана на основе, хотите ли вы арендовать небольшой ($ 15/месяц), средний ($ 25 в месяц) или большой наборы ($ 39/месяц). Вы можете заказать один набор за раз.
+                  //
+                     /accordion-inner 
+                //
+                   /collapse 
+              //
+                 /accordion-group 
+              br
+              .accordion-group
+                .accordion-heading
+                  a.accordion-toggle(data-toggle='collapse', data-parent='#accordion2', href='http://alvarez.is/demo/diamond/#collapseSeven')
+                    licon.li_diamond
+                    | Как часто я могу заказывать ЛЕГО?
+                #collapseSeven.accordion-body.collapse
+                  .accordion-inner
+                    p
+                      | Вы можете совершить следующий заказ, когда пройдет две недели после предыдущего заказа.
+                  //
+                     /accordion-inner 
+                //
+                   /collapse 
+              //
+                 /accordion-group 
+              br
+              .accordion-group
+                .accordion-heading
+                  a.accordion-toggle(data-toggle='collapse', data-parent='#accordion2', href='http://alvarez.is/demo/diamond/#collapseEight')
+                    licon.li_diamond
+                    | Могу ли я купить набор, если я хочу оставить его? 
+                #collapseEight.accordion-body.collapse
+                  .accordion-inner
+                    p
+                      | Да. Если ваш ребенок любит набор, и хочет оставить его, вы можете легко приобрести его у нас по льготному тарифу. Вы получите следующий набор из вашего списка сразу после приобретения.
+                  //
+                     /accordion-inner 
+                //
+                   /collapse 
+              //
+                 /accordion-group 
+              br
+            //
+               Accordion 
+          //
+             col-lg-6 
+        //
+           row 
+      //
+         container 
+      br
+      br
+    //
+       faqsection 
+    //
+       ========== SECTION DIVIDER 03 ========== 
+    #section03
+      .container
+        h1 Relax, take it easy & enjoy.
+      //
+         container 
+    //
+       section03 
+    //
+       ========== PRICING LIST ========== 
+    section#pricing.scrollspy(name='pricing')
+    #pricing.container(name='pricing')
+      br
+      .row
+        br
+        .col-lg-6.col-lg-offset-3
+          h2.centered ЛУЧШИЕ ЦЕНЫ
+          hr
+          br
+          br
+        //
+           col-lg-6 
+      //
+         /row 
+      .row
+        .col-lg-4
+          //
+             START PRICING TABLE 
+          .pricing-option
+            .pricing-top
+              span.pricing-edition Маленький
+              span.price
+                sup ₴
+                span.price-amount 99
+                small &nbsp;&nbsp; /месяц
+            ul
+              li
+                strong 10GB
+                | Storage
+              li
+                | Up to
+                strong 10
+                | Users
+              li
+                strong 5
+                | Domains
+              li
+                strong Free
+                | Setup
+              li
+                strong 1-year
+                | Free support *
+            a.pricing-signup(href='http://alvarez.is/demo/diamond/index.html#') Sign up
+          //
+             /pricing-option 
+          //
+             END PRICING TABLE 
+        //
+           /col 
+        .col-lg-4
+          //
+             START PRICING TABLE 
+          .pricing-option
+            .pricing-top
+              span.pricing-edition Большой
+              span.price
+                sup ₴
+                span.price-amount 199
+                small &nbsp;&nbsp; /месяц
+            ul
+              li
+                strong 20GB
+                | Storage
+              li
+                | Up to
+                strong 20
+                | Users
+              li
+                strong 10
+                | Domains
+              li
+                strong Free
+                | Setup
+              li
+                strong 2-year
+                | Free support *
+            a.pricing-signup(href='http://alvarez.is/demo/diamond/index.html#') Sign up
+          //
+             /pricing-option 
+          //
+             END PRICING TABLE 
+        //
+           /col 
+        .col-lg-4
+          //
+             START PRICING TABLE 
+          .pricing-option
+            .pricing-top
+              span.pricing-edition Гигантский
+              span.price
+                sup ₴
+                span.price-amount 299
+                small &nbsp;&nbsp; /месяц
+            //
+               /pricing-top 
+            ul
+              li
+                strong 40GB
+                | Storage
+              li
+                | Up to
+                strong 40
+                | Users
+              li
+                strong 25
+                | Domains
+              li
+                strong Free
+                | Setup
+              li
+                strong 3-year
+                | Free support *
+            a.pricing-signup(href='http://alvarez.is/demo/diamond/index.html#') Sign up
+          //
+             /pricing-option 
+          //
+             END PRICING TABLE 
+        //
+           /col 
+      //
+         /row 
+      br
+      br
+    //
+       Container 
+    //
+       ========== Register Wrap ========== 
+    section#register.scrollspy(name='register')
+    #registerwrap
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2
+            h1 Мы Вам Позвони́м
+            br
+        .row
+          .col-lg-offset-3.col-lg-9
+            form.form-horizontal(role='form')
+              .form-group
+                .col-lg-8
+                  input#inputName1.form-control(type='text', placeholder='Филимон')
+              .form-group
+                .col-lg-8
+                  input#inputPhone1.form-control(type='phone', placeholder='+380967770519')
+              .form-group
+                .col-lg-8.centered
+                  br
+                  a.btn-lg.btn-theme(type='submit') Sign in
+          //
+             col-lg-9 
+        //
+           row 
+        br
+        br
+      //
+         Container 
+    //
+       registerwrap 
+    #footerwrap
+      .container
+        .row
+          .col-lg-4.centered
+            h3 Our Headquarters
+            br
+            p
+              | Winchester 987,
+              br
+              | New York, NY
+              br
+              | Tel.: 609 984236
+              br
+              | hello@yourmail.com
+          .col-lg-4.centered
+            h3 Testimonial
+            br
+            p
+              img.centered.img-circle(src='/addons/pic.jpg', alt='', width='50px', height='50px')
+            p
+              i Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          .col-lg-4.centered
+            h3 We Are Social
+            br
+            p
+              a.icon.icon-twitter(href='http://alvarez.is/demo/diamond/#')
+              a.icon.icon-facebook(href='http://alvarez.is/demo/diamond/#')  
+              a.icon.icon-flickr(href='http://alvarez.is/demo/diamond/#')
+        br
+        br
+    //
+       Bootstrap core JavaScript
+          ================================================== 
+    //
+       Placed at the end of the document so the pages load faster 
+    script(type='text/javascript', src='/addons/jquery.min.js')
+    script(type='text/javascript', src='/addons/bootstrap.min.js')
+    script(type='text/javascript', src='/addons/appshowcase.js')
+    script(type='text/javascript', src='/addons/smoothscroll.js')
+    script(type='text/javascript', src='/addons/jquery-func.js')
+    script(type='text/javascript', src='/addons/retina.js')
+    script.
+      $(function() {
+        AppShowcase.init();
+      });
