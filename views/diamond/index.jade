@@ -18,12 +18,8 @@ html(lang='en')
       link(href='/addons/css.css', rel='stylesheet', type='text/css')
       link(href='/addons/css(1).css', rel='stylesheet', type='text/css')
       != js('application')
-      //
-         HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries 
-      //if lt IE 9
-        script(src='../../assets/js/html5shiv.js')
-        script(src='../../assets/js/respond.min.js')
-  body(data-spy='scroll', data-offset='0', data-target='#navbar-main', style='')
+      
+  body(data-spy='scroll', data-offset='0', data-target='.navbar', style='')
     //
        Fixed navbar 
     #navbar-main
@@ -35,19 +31,18 @@ html(lang='en')
               span.icon-bar
               span.icon-bar
             a.navbar-brand
-              //- licon.li_diamond
               .logo-img
-          .navbar-collapse.collapse
+          .navbar-collapse.collapse.navbar-exapmle
             ul.nav.navbar-nav
               li.active
                 a.smoothScroll(href='#home') Главная
-              li
+              li(class='')
                 a.smoothScroll(href='#showcase') Как это работает?
-              li
+              li(class='')
                 a.smoothScroll(href='#faq') FAQ
-              li
+              li(class='')
                 a.smoothScroll(href='#pricing') Цены
-              li
+              li(class='')
                 a.smoothScroll(href='#register') Закажи прямо сейчас!
           //
             /.nav-collapse 
@@ -92,7 +87,7 @@ html(lang='en')
     .container.features
       .row
         .col-lg-4
-          licon.li_diamond
+          licon.li_truck
           h4 БЕСПЛАТНАЯ ДОСТАВКА В ОБЕ СТОРОНЫ.
         //
            col-lg-3 
@@ -114,7 +109,7 @@ html(lang='en')
        ========== SECTION DIVIDER 01 ========== 
     #section01
       .container
-        h1 Your app deserves the best landing page.
+        h1 Выбирай из сотен наборов Лего.
       //
          container 
     //
@@ -127,15 +122,26 @@ html(lang='en')
         br
         br
         .col-lg-6.col-lg-offset-3
-          h2.centered QUALITY MEETS LANDING PAGE.
+          h2.centered КАК ЭТО РАБОТАЕТ
           hr
           br
-          p
-            | Any web page that you purposely send traffic to is a ‘landing page’. It’s the page where people end up after they click on a PPC ad, a tweet, an email, or after they scan a QR code – just to name a few.
-          p
-            | While you could simply direct this campaign traffic to your homepage or a product page within your website, this doesn’t usually yield the best results.
-          p
-            | The page where someone lands after the click has enormous potential to influence whether or not that visitor eventually converts into a lead or sale. Too often, marketers focus most of their attention and budget on attracting and driving good traffic, but that’s really only half of the equation.
+          h2.centered Определись
+          p.centered
+            ul.list-group
+              li.list-group-item Выбирай из сотен наборов
+              li.list-group-item Регистрируйся по номеру мобильного
+              li.list-group-item Мы звоним - и ты оформляешь заказ
+          h2.centered Играй и возвращай
+          p.centered
+            ul.list-group
+              li.list-group-item Закажи ЛЕГО®, играй, верни через месяц
+              li.list-group-item Бесплатная доставка в обе стороны
+              li.list-group-item Никакого залога
+
+          h2.centered Есть вопросы? 
+          h2.centered У нас есть 
+            a.smoothScroll(href='#faq') ответы
+            | !
         //
            col-lg-6 
       //
@@ -144,22 +150,22 @@ html(lang='en')
       br
       #ac-wrapper.ac-wrapper
         .ac-device
-          a(href='http://alvarez.is/demo/diamond/#')
-            img(src='/addons/screen4.jpg')
-          h3.ac-title Pssst! Try to click the image.
+          a(href='#')
+            img(src='/img/screen2.jpg')
+          h3.ac-title Пссс! Нажми на картинку!
         .ac-grid
           a(href='#')
-            img(src='/addons/screen2.jpg')
-            span Awesome showcase script.
+            img(src='/img/screen2.jpg')
+            span Поднимай настроение.
           a(href='#')
-            img(src='/addons/screen1.jpg')
-            span Ideal for any app.
+            img(src='/img/screen1.jpg')
+            span Делай невероятные вещи.
           a(href='#')
-            img(src='/addons/screen3.jpg')
-            span Truly fashion design.
+            img(src='/img/screen3.jpg')
+            span Дари радость детям.
           a(href='#')
-            img(src='/addons/screen4.jpg')
-            span It's cool, you know it.
+            img(src='/img/screen4.jpg')
+            span Создавай великолепные истории.
       //
          ac-wrapper 
       br
@@ -171,7 +177,7 @@ html(lang='en')
        ========== SECTION DIVIDER 02 ========== 
     #section02
       .container
-        h1 Our team works hard for you.
+        h1 Наша команда работает для тебя
       //
          container 
     //
@@ -202,7 +208,7 @@ html(lang='en')
               .accordion-group
                 .accordion-heading
                   a.accordion-toggle(data-toggle='collapse', data-parent='#accordion2', href='http://alvarez.is/demo/diamond/#collapseOne')
-                    licon.li_diamond
+                    licon.li_question
                     | Я получаю чистый ЛЕГО?
                 //
                    /accordion-heading 
@@ -220,7 +226,7 @@ html(lang='en')
               .accordion-group
                 .accordion-heading
                   a.accordion-toggle(data-toggle='collapse', data-parent='#accordion2', href='http://alvarez.is/demo/diamond/#collapseTwo')
-                    licon.li_diamond
+                    licon.li_question
                     | Что я получу в коробке?
                 #collapseTwo.accordion-body.collapse
                   .accordion-inner
@@ -236,7 +242,7 @@ html(lang='en')
               .accordion-group
                 .accordion-heading
                   a.accordion-toggle(data-toggle='collapse', data-parent='#accordion2', href='http://alvarez.is/demo/diamond/#collapseThree')
-                    licon.li_diamond
+                    licon.li_question
                     | Нужно ли платить за доставку? 
                 #collapseThree.accordion-body.collapse
                   .accordion-inner
@@ -252,7 +258,7 @@ html(lang='en')
               .accordion-group
                 .accordion-heading
                   a.accordion-toggle(data-toggle='collapse', data-parent='#accordion2', href='http://alvarez.is/demo/diamond/#collapseFour')
-                    licon.li_diamond
+                    licon.li_question
                     | Что произойдет, если я потеряю детальку? 
                 #collapseFour.accordion-body.collapse
                   .accordion-inner
@@ -268,7 +274,7 @@ html(lang='en')
               .accordion-group
                 .accordion-heading
                   a.accordion-toggle(data-toggle='collapse', data-parent='#accordion2', href='http://alvarez.is/demo/diamond/#collapseFive')
-                    licon.li_diamond
+                    licon.li_question
                     | Что будет, если мне не хватит деталек?
                 #collapseFive.accordion-body.collapse
                   .accordion-inner
@@ -284,7 +290,7 @@ html(lang='en')
               .accordion-group
                 .accordion-heading
                   a.accordion-toggle(data-toggle='collapse', data-parent='#accordion2', href='http://alvarez.is/demo/diamond/#collapseSix')
-                    licon.li_diamond
+                    licon.li_question
                     | Сколько стоит услуга? 
                 #collapseSix.accordion-body.collapse
                   .accordion-inner
@@ -300,7 +306,7 @@ html(lang='en')
               .accordion-group
                 .accordion-heading
                   a.accordion-toggle(data-toggle='collapse', data-parent='#accordion2', href='http://alvarez.is/demo/diamond/#collapseSeven')
-                    licon.li_diamond
+                    licon.li_question
                     | Как часто я могу заказывать ЛЕГО?
                 #collapseSeven.accordion-body.collapse
                   .accordion-inner
@@ -316,7 +322,7 @@ html(lang='en')
               .accordion-group
                 .accordion-heading
                   a.accordion-toggle(data-toggle='collapse', data-parent='#accordion2', href='http://alvarez.is/demo/diamond/#collapseEight')
-                    licon.li_diamond
+                    licon.li_question
                     | Могу ли я купить набор, если я хочу оставить его? 
                 #collapseEight.accordion-body.collapse
                   .accordion-inner
@@ -539,18 +545,8 @@ html(lang='en')
               a.icon.icon-flickr(href='http://alvarez.is/demo/diamond/#')
         br
         br
-    //
-       Bootstrap core JavaScript
-          ================================================== 
-    //
-       Placed at the end of the document so the pages load faster 
-    script(type='text/javascript', src='/addons/jquery.min.js')
-    script(type='text/javascript', src='/addons/bootstrap.min.js')
-    script(type='text/javascript', src='/addons/appshowcase.js')
-    script(type='text/javascript', src='/addons/smoothscroll.js')
-    script(type='text/javascript', src='/addons/jquery-func.js')
-    script(type='text/javascript', src='/addons/retina.js')
-    script.
-      $(function() {
-        AppShowcase.init();
-      });
+        script(type='text/javascript', src='/addons/appshowcase.js')
+        script.
+          $(function() {
+            AppShowcase.init();
+          });
