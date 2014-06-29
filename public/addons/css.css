@@ -77,3 +77,20 @@
   border: 4px #fff solid;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
+
+.videoshow-tv {
+  background: url('../img/tv.png');
+  width: 376px;
+  height: 365px;
+  z-index: 100;
+  position: absolute;
+}
+.videoshow {
+  position: relative;
+  top: 77px;
+  left: 8px;
+}
+.videoshow-wrapper {
+  position: relative;
+  left: 80px;
+}

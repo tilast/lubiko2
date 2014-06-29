@@ -198,7 +198,11 @@ html(lang='en')
           //
              col-lg-6 
           .col-lg-6(style='text-align: left;')
-            img.img-responsive(src='/addons/animation.gif')
+            //- img.img-responsive(src='/addons/animation.gif')
+            .videoshow-wrapper
+              .videoshow-tv
+              video.videoshow(width="360" height="250")
+                source(type="video/mp4")
           //
              col-lg-6 
           //
@@ -349,9 +353,9 @@ html(lang='en')
        faqsection 
     //
        ========== SECTION DIVIDER 03 ========== 
-    #section03
-      .container
-        h1 Relax, take it easy & enjoy.
+    //- #section03
+    //-   .container
+    //-     h1 Relax, take it easy & enjoy.
       //
          container 
     //
@@ -504,7 +508,7 @@ html(lang='en')
               .form-group
                 .col-lg-8.centered
                   br
-                  a.btn-lg.btn-theme(type='submit') Sign in
+                  a.btn-lg.btn-theme(type='submit') Заказать набор!
           //
              col-lg-9 
         //
@@ -519,30 +523,32 @@ html(lang='en')
       .container
         .row
           .col-lg-4.centered
-            h3 Our Headquarters
+            h3 Наш адрес
             br
             p
-              | Winchester 987,
+              | переулок Ковальский, 5
               br
-              | New York, NY
+              | Киев
               br
-              | Tel.: 609 984236
+              | 063 44 59 264,
+              br 
+              | 063 41 94 729
               br
-              | hello@yourmail.com
-          .col-lg-4.centered
-            h3 Testimonial
-            br
-            p
-              img.centered.img-circle(src='/addons/pic.jpg', alt='', width='50px', height='50px')
-            p
-              i Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          .col-lg-4.centered
-            h3 We Are Social
-            br
-            p
-              a.icon.icon-twitter(href='http://alvarez.is/demo/diamond/#')
-              a.icon.icon-facebook(href='http://alvarez.is/demo/diamond/#')  
-              a.icon.icon-flickr(href='http://alvarez.is/demo/diamond/#')
+              | info@lubiko.com
+          //- .col-lg-4.centered
+          //-   h3 Testimonial
+          //-   br
+          //-   p
+          //-     img.centered.img-circle(src='/addons/pic.jpg', alt='', width='50px', height='50px')
+          //-   p
+          //-     i Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          //- .col-lg-4.centered
+          //-   h3 We Are Social
+          //-   br
+          //-   p
+          //-     a.icon.icon-twitter(href='http://alvarez.is/demo/diamond/#')
+          //-     a.icon.icon-facebook(href='http://alvarez.is/demo/diamond/#')  
+          //-     a.icon.icon-flickr(href='http://alvarez.is/demo/diamond/#')
         br
         br
         script(type='text/javascript', src='/addons/appshowcase.js')
