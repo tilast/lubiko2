@@ -117,4 +117,42 @@ $(document).ready(function() {
 
   // console.log(document.querySelector('.videoshow'));
 
+  $(".js-get-lubiko").on('click', function() {
+    var data = {
+      name: $("#inputName1").val(),
+      phone: $("#inputPhone1").val(),
+    };
+
+    var err = false;
+    var prevBorder = $("#inputName1").css('border');
+    if(data.name == '' || !data.name) {
+      $("#inputName1").css('border', '1px solid red');
+      err = true;
+    }
+
+    if(!(/\+[\d]{11}/.test(data.phone))) {
+      $("#inputPhone1").css('border', '1px solid red');
+      err = true;
+    }
+
+    if(err) {
+      return false;
+    }
+
+    $("#inputPhone1").css('border', prevBorder);
+    $("#inputName1").css('border', prevBorder);
+
+    $.post(
+      '/get-lubiko', 
+      {
+        name: $("#inputName1").val(),
+        phone: $("#inputPhone1").val(),
+      },
+      function(data) {
+        $(".js-get-lubiko").text("Заявку принято! Мы скоро позвоним :)");
+      }
+    ).fail(function(err) {
+      $(".js-get-lubiko").text("Странно, но с сайтом что-то не так. Приносим свои извинения, позвоните нам сами, пожалуйста ;(");
+    });
+  });
 });

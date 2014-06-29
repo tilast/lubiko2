@@ -6,6 +6,20 @@ var passport = require('passport');
 var User = require('../models/User');
 var secrets = require('../config/secrets');
 
+exports.sendUsMail = function(req, res) {
+  var mail = require("nodemailer").mail;
+
+  mail({
+      from: "Lubiko Site ✔ <site@lubiko.com>", // sender address
+      to: "Lubiko Team ✔ <ihor.kroosh@gmail.com>", // list of receivers
+      subject: "Hello ✔", // Subject line
+      text: "Hello world ✔", // plaintext body
+      html: "<b>Let's call to " + req.body.name + ", phone is " + req.body.phone + " ✔</b>" // html body
+  });
+
+  return res.render('response', {response: JSON.stringify({result: true})});
+};
+
 /**
  * GET /login
  * Login page.

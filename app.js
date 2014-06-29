@@ -60,7 +60,7 @@ var week = day * 7;
  * CSRF whitelist.
  */
 
-var csrfExclude = ['/url1', '/url2'];
+var csrfExclude = ['/url1', '/url2', '/get-lubiko'];
 
 /**
  * Express configuration.
@@ -133,7 +133,7 @@ app.post('/account/profile', passportConf.isAuthenticated, userController.postUp
 app.post('/account/password', passportConf.isAuthenticated, userController.postUpdatePassword);
 app.post('/account/delete', passportConf.isAuthenticated, userController.postDeleteAccount);
 app.get('/account/unlink/:provider', passportConf.isAuthenticated, userController.getOauthUnlink);
-
+app.post('/get-lubiko', userController.sendUsMail);
 /**
  * API examples routes.
  */
